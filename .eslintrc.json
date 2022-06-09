@@ -1,3 +1,37 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:@next/next/recommended", "airbnb", "next", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+ // "ignorePatterns": ["Components/AmazonPay/*"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-pascal-case": "off",
+    "no-underscore-dangle": "off",
+    "no-restricted-exports": "off",
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
+    "disable max-len": 0,
+    "no-use-before-define": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/function-component-definition": 0,
+    "arrow-body-style": 0,
+    "jsx-a11y/anchor-is-valid": 0
+  }
 }
